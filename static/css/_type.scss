@@ -1,0 +1,11 @@
+$fontLight:     "Helvetica Neue";
+$fontRegular:   "Helvetica Neue";
+$fontBold:      "Simple-Bold";
+$fontItalic:    "Simple-Oblique";
+$fontBoldItalic:"Simple-BoldOblique";
+
+html {
+    font-family: $fontRegular, sans-serif;
+    color: white;
+    font-weight: 200;
+}

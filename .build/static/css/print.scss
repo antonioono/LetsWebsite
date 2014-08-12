@@ -1,0 +1,46 @@
+@import "_boilerplate.scss";
+@import "_grid.scss";
+@import "_type.scss";
+
+body {
+    font-size: 8pt !important;
+    line-height: 1.5em;
+    * {
+        font-size: 1em !important;
+        font-family: $fontLight;
+    }
+    .plate {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .menu {
+        section {
+            page-break-after: always;
+            &:before {
+                content: "nîkúmøn";
+                margin-left: 2em;
+            }
+            ul {
+                li {
+                    width: 12em;
+                    height: 14em;
+                    padding-right: 2em;
+                    padding-bottom: 2em;
+                    display: inline-block;
+                    vertical-align: top;
+                    // text-align: center;
+                    img {
+                        width: 100%;
+                    }
+                    span {
+                        margin-left: 2em;
+                        
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

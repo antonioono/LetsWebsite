@@ -1,0 +1,46 @@
+/*
+Syntax error: Invalid US-ASCII character "\xC3"
+        on line 22 of /Users/Antonio/Dropbox/Fizz/Design/Website/Fizz/static/css/print.scss
+
+17:     }
+18:     .menu {
+19:         section {
+20:             page-break-after: always;
+21:             &:before {
+22:                 content: "nîkúmøn";
+23:                 margin-left: 2em;
+24:             }
+25:             ul {
+26:                 li {
+27:                     width: 12em;
+
+Backtrace:
+/Users/Antonio/Dropbox/Fizz/Design/Website/Fizz/static/css/print.scss:22
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/engine.rb:373:in `block in check_encoding!'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/util.rb:604:in `rescue in block in check_encoding'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/util.rb:601:in `block in check_encoding'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/util.rb:600:in `each'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/util.rb:600:in `each_with_index'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/util.rb:600:in `check_encoding'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/util.rb:654:in `check_sass_encoding'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/engine.rb:372:in `check_encoding!'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/engine.rb:339:in `_to_tree'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/exec.rb:443:in `watch_or_update'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/exec.rb:326:in `process_result'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/exec.rb:41:in `parse'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/lib/sass/exec.rb:21:in `parse!'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/gems/sass-3.2.14/bin/scss:13:in `<top (required)>'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/bin/scss:23:in `load'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid US-ASCII character \"\xC3\"\A         on line 22 of /Users/Antonio/Dropbox/Fizz/Design/Website/Fizz/static/css/print.scss\A \A 17:     }\A 18:     .menu {\A 19:         section {\A 20:             page-break-after: always;\A 21:             &:before {\A 22:                 content: \"nîkúmøn\";\A 23:                 margin-left: 2em;\A 24:             }\A 25:             ul {\A 26:                 li {\A 27:                     width: 12em;"; }

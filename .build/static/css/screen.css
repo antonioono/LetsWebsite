@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+html {
+  text-rendering: optimizeLegibility; }
+
+html {
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+  font-weight: 200; }
+
+html body {
+  background-color: black; }
+
+body > .main header {
+  width: 100%;
+  text-align: center; }
+  body > .main header h1 {
+    position: relative;
+    top: 50vh;
+    font-size: 2em;
+    z-index: 10; }
+    @media screen and (min-width: 320pt) {
+      body > .main header h1 span {
+        display: inline-block;
+        text-align: left; }
+        body > .main header h1 span:nth-child(1) {
+          width: 269pt;
+          text-align: right;
+          background: green; }
+        body > .main header h1 span:nth-child(2) {
+          width: 269pt; } }
+body section.iphone {
+  position: absolute;
+  background: red;
+  height: 100vh;
+  width: 100vw;
+  top: 0; }
+  @media screen and (min-width: 320pt) {
+    body section.iphone {
+      border-radius: 40pt;
+      border: 1pt white solid;
+      margin-left: -135pt;
+      left: 50%;
+      height: 584pt;
+      width: 269pt; } }
+  body section.iphone .screen {
+    height: 100%;
+    width: 100%;
+    background: blue; }
+    @media screen and (min-width: 320pt) {
+      body section.iphone .screen {
+        border: 1pt white solid;
+        height: 434pt;
+        width: 245pt;
+        margin-left: -123pt;
+        margin-top: -217pt;
+        left: 50%;
+        top: 50%;
+        position: relative; } }
+    body section.iphone .screen .interface {
+      height: 100%;
+      width: 100%; }
+      body section.iphone .screen .interface h1 {
+        padding-top: 66.666vh; }
+  @media screen and (min-width: 320pt) {
+    body section.iphone .homeButton {
+      height: 53pt;
+      width: 53pt;
+      border: 1pt white solid;
+      position: absolute;
+      bottom: 10pt;
+      left: 50%;
+      margin-left: -27pt;
+      border-radius: 53pt; } }
