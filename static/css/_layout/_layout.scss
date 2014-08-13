@@ -1,8 +1,11 @@
-@import "_iphone.scss";
+@import "_header.scss";
+@import "_device.scss";
 
 html {
     
     body {
         background-color: black;
+        background-image: url('../images/bg.jpg');
+        background-attachment: fixed;
     }
 }

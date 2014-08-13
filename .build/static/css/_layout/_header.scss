@@ -1,0 +1,19 @@
+body {
+    > .main > header {
+        h1 {
+            text-transform: lowercase;
+            font-family:    $fontItalic;
+            line-height:    1.25em;
+            font-size:      4em;
+
+            margin-left:   -$iPhoneWidth / 2;
+            position:       relative;
+            width:          $iPhoneWidth/2;
+            left:           50%;
+            
+            span {
+                display: block;
+            }
+        }
+    }
+}

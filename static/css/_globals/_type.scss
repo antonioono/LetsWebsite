@@ -1,11 +1,39 @@
-$fontLight:     "Helvetica Neue";
-$fontRegular:   "Helvetica Neue";
-$fontBold:      "Simple-Bold";
-$fontItalic:    "Simple-Oblique";
-$fontBoldItalic:"Simple-BoldOblique";
+$fontRegular:       "Futura";
+$fontBold:          "FuturaStd-Bold";
+$fontItalic:        "Futura-MediumItalic";
+$fontBoldItalic:    "FuturaStd-BoldOblique";
+
+@mixin typeBody {
+    font-family:    $fontRegular, serif;
+    font-size:      12pt;
+    line-height:    1.5em;
+}
 
 html {
-    font-family: $fontRegular, sans-serif;
-    color: white;
-    font-weight: 200;
+    @include typeBody;
+    color:  white;
+
+    article {
+
+        header {
+
+            h1 {
+            }
+        }
+    }
+
+    figure {
+
+        h1 {
+            font-family:    $fontItalic;
+        }
+
+    }
+}
+
+@mixin smallCaps {
+    font-size:      .666em;
+    font-family:    $fontBold;
+    letter-spacing: .25em;
+    text-transform: uppercase !important;
 }

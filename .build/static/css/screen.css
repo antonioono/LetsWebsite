@@ -46,74 +46,112 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 html {
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 html {
-  font-family: "Helvetica Neue", sans-serif;
-  color: white;
-  font-weight: 200; }
+  font-family: "Futura", serif;
+  font-size: 12pt;
+  line-height: 1.5em;
+  color: white; }
+  html figure h1 {
+    font-family: "Futura-MediumItalic"; }
 
-body > .main header {
-  width: 100%;
-  text-align: center; }
-  body > .main header h1 {
-    position: relative;
-    top: 50vh;
-    font-size: 2em;
-    z-index: 10; }
-    @media screen and (min-width: 320pt) {
-      body > .main header h1 span {
-        display: inline-block;
-        text-align: left; }
-        body > .main header h1 span:nth-child(1) {
-          width: 269pt;
-          text-align: right;
-          background: green; }
-        body > .main header h1 span:nth-child(2) {
-          width: 269pt; } }
+body > .main > header h1 {
+  text-transform: lowercase;
+  font-family: "Futura-MediumItalic";
+  line-height: 1.25em;
+  font-size: 4em;
+  margin-left: -134.5pt;
+  position: relative;
+  width: 134.5pt;
+  left: 50%; }
+  body > .main > header h1 span {
+    display: block; }
+
 body section.iphone {
+  background: black;
   position: absolute;
-  background: red;
   height: 100vh;
   width: 100vw;
-  top: 0; }
+  cursor: default; }
   @media screen and (min-width: 320pt) {
     body section.iphone {
       border-radius: 40pt;
-      border: 1pt white solid;
       margin-left: -135pt;
-      left: 50%;
+      position: absolute;
+      border: 1pt white solid;
       height: 584pt;
-      width: 269pt; } }
+      width: 269pt;
+      left: 50%;
+      bottom: -50vh; } }
   body section.iphone .screen {
+    background-color: black;
+    position: relative;
     height: 100%;
     width: 100%;
-    background: blue; }
+    overflow: scroll; }
     @media screen and (min-width: 320pt) {
       body section.iphone .screen {
-        border: 1pt white solid;
-        height: 434pt;
-        width: 245pt;
         margin-left: -123pt;
         margin-top: -217pt;
+        position: relative;
+        height: 434pt;
+        width: 245pt;
         left: 50%;
-        top: 50%;
-        position: relative; } }
+        top: 50%; } }
     body section.iphone .screen .interface {
+      position: relative;
+      z-index: 2;
       height: 100%;
       width: 100%; }
-      body section.iphone .screen .interface h1 {
-        padding-top: 66.666vh; }
+      body section.iphone .screen .interface::after {
+        background-image: url("../images/bgEvent.jpg");
+        background-size: cover;
+        min-height: 100%;
+        min-width: 100%;
+        position: fixed;
+        content: "";
+        opacity: 0.9;
+        z-index: -1;
+        top: 0;
+        left: 0; }
+      body section.iphone .screen .interface header h1 {
+        font-family: "Futura-MediumItalic";
+        text-transform: lowercase;
+        line-height: 1em;
+        padding-top: 1em;
+        font-size: 4em; }
+      body section.iphone .screen .interface header author {
+        font-size: .666em;
+        font-family: "FuturaStd-Bold";
+        letter-spacing: .25em;
+        text-transform: uppercase !important;
+        font-family: "FuturaStd-BoldOblique";
+        line-height: 4em; }
+      body section.iphone .screen .interface .guestlist {
+        text-transform: lowercase;
+        margin-left: 25%;
+        margin-top: 1em; }
+        body section.iphone .screen .interface .guestlist ul.no-reply {
+          opacity: 50%; }
   @media screen and (min-width: 320pt) {
     body section.iphone .homeButton {
-      height: 53pt;
-      width: 53pt;
-      border: 1pt white solid;
+      border-radius: 53pt;
+      margin-left: -27pt;
       position: absolute;
       bottom: 10pt;
-      left: 50%;
-      margin-left: -27pt;
-      border-radius: 53pt; } }
+      border: 1pt white solid;
+      height: 53pt;
+      width: 53pt;
+      left: 50%; } }
 
 html body {
-  background-color: black; }
+  background-color: black;
+  background-image: url("../images/bg.jpg");
+  background-attachment: fixed; }
