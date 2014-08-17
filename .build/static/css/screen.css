@@ -86,10 +86,10 @@ body section.iphone {
       margin-left: -135pt;
       position: absolute;
       border: 1pt white solid;
+      bottom: -25vh;
       height: 584pt;
       width: 269pt;
-      left: 50%;
-      bottom: -50vh; } }
+      left: 50%; } }
   body section.iphone .screen {
     background-color: black;
     position: relative;
@@ -122,11 +122,11 @@ body section.iphone {
         top: 0;
         left: 0; }
       body section.iphone .screen .interface header h1 {
-        font-family: "Futura-MediumItalic";
         text-transform: lowercase;
-        line-height: 1em;
-        padding-top: 1em;
-        font-size: 4em; }
+        font-family: "Futura-MediumItalic";
+        line-height: 1.25em;
+        font-size: 5em;
+        padding-top: .25em; }
       body section.iphone .screen .interface header author {
         font-size: .666em;
         font-family: "FuturaStd-Bold";

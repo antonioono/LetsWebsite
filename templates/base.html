@@ -12,7 +12,8 @@
     <!--[if lt IE 8]>
       <link href="{% static 'css/ie.css' %}" media="screen, projection" rel="stylesheet" type="text/css">
     <![endif]-->
-
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="{% static '/static/js/client.js' %}"></script>
 	{% block header %}
 	<title>{% block title %}Fizz{% endblock %}</title>
 	{% endblock header %}
@@ -29,7 +30,6 @@
         © Fizz, LLC 2014
     </footer>
 	{% block scripts %}
-	<script src="//code.jquery.com/jquery.min.js"></script>
 	<script src="{% static '/static/js/main.js' %}"></script>
 	{% endblock scripts%}
 </body>

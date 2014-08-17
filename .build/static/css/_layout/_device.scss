@@ -8,13 +8,14 @@ body {
     
         @media screen and (min-width: $breakpointTablet) {
             border-radius:  40pt;
+            
             margin-left:    -135pt;
             position:       absolute;
             border:         1pt white solid;
+            bottom:         -25vh;
             height:         $iPhoneHeight;
             width:          $iPhoneWidth;
             left:           50%;
-            bottom:         -50vh;
         }
     
         .screen {
@@ -56,11 +57,12 @@ body {
                 header {
                     
                     h1 {
-                        font-family:    $fontItalic;
                         text-transform: lowercase;
-                        line-height:    1em;
-                        padding-top:    1em;
-                        font-size:      4em;
+                        font-family:    $fontItalic;
+                        line-height:    1.25em;
+                        font-size:      5em;
+
+                        padding-top:    .25em;
                     }
                     
                     author {
