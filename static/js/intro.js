@@ -12,15 +12,29 @@ $(document).ready(function(){
                     "http://placekitten.com/2052",
                     "http://placekitten.com/2053"],
         span    = $("body > header h1 span"),
-        i       = 0;
+        oldI = newI = 0;
 
-    setInterval(function(){
-        var title = events[i];        
-        span.text(title);
-        $(".bg").css("background-image", "url('" + images[i] + "')");
-        i++;
-        if (i == events.length) {
-            i = 0;
-        }
+    setInterval(function(){        
+        newI = randomI(oldI);
+        console.log(newI, oldI);
+        oldI = newI;
+               
+        span.text(events[newI]);
+        $(".bg").css("background-image", "url('" + images[newI] + "')");
     }, 125);
+    
+    function randomI(oldI) {
+        var randI = Math.floor(Math.random() * events.length);
+        compareI(newI, oldI);
+        return newI;
+    }
+    
+    function compareI(a, b) {
+        if (a == b) {
+            newI = Math.floor(Math.random() * events.length);
+            compareI(newI, oldI);
+        } else {
+            return;
+        }
+    }
 }); 
