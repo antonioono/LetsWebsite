@@ -24,5 +24,5 @@ $(document).ready(function(){
         if (i >= events.length) {
             i = 1;
         }
-    }, 250);
+    }, 125);
 });
