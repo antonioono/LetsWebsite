@@ -26,10 +26,11 @@ $(document).ready(function(){
         if (i >= events.length) {
             i = 1;
         }
+        
+        console.log(i);
     }, 125);
 
     function incrementEvent(title) {
         $(span).text(title);
-        console.log(span);
     }
 }); 
