@@ -9,6 +9,14 @@ $fontBoldItalic:    "FuturaStd-BoldOblique";
     line-height:    1.5em;
 }
 
+@mixin headerType {
+    text-transform: lowercase;
+    font-family:    $fontItalic;
+    line-height:    1.25em;
+    font-size:      12vw;
+    letter-spacing:-.03125em;
+}
+
 html {
     @include typeBody;
     color:  white;
