@@ -1,16 +1,32 @@
 $(document).ready(function(){
-    var events  =  ["maecenas faucibus mollis interdum",
-                    "vestibulum id ligula porta",
-                    "felis euismod semper",
-                    "donec id elit non mi",
-                    "porta gravida at eget metus",
-                    "duis mollis"],
-        images  =  ["http://placekitten.com/2048",
-                    "http://placekitten.com/2049",
-                    "http://placekitten.com/2050",
-                    "http://placekitten.com/2051",
-                    "http://placekitten.com/2052",
-                    "http://placekitten.com/2053"],
+    var events  =  ["go to the beach",
+                    "go ice fishing in Michigan",
+                    "eat",
+                    "do lunch",
+                    "go bouldering",
+                    "find a nice hole in the wall",
+                    "see what is happening over at victor's",
+                    "do something",
+                    "cook together",
+                    "get out of here",
+                    "get artisinal toast",
+                    "dance",
+                    "check out tropical tuesday at Brillbox",
+                    "get belgian waffle"],
+        images  =  ["./static/images/bgImages/IMG_0459.jpg",
+                    "./static/images/bgImages/IMG_0460.jpg",
+                    "./static/images/bgImages/IMG_0461.jpg",
+                    "./static/images/bgImages/IMG_0462.jpg",
+                    "./static/images/bgImages/IMG_0463.jpg",
+                    "./static/images/bgImages/IMG_0464.jpg",
+                    "./static/images/bgImages/IMG_0465.jpg",
+                    "./static/images/bgImages/IMG_0466.jpg",
+                    "./static/images/bgImages/IMG_0467.jpg",
+                    "./static/images/bgImages/IMG_0468.jpg",
+                    "./static/images/bgImages/IMG_0469.jpg",
+                    "./static/images/bgImages/IMG_0476.jpg",
+                    "./static/images/bgImages/IMG_0478.jpg",
+                    "./static/images/bgImages/IMG_0479.jpg"],
         span    = $("body > header h1 span"),
         oldI = newI = 0;
 
@@ -21,7 +37,7 @@ $(document).ready(function(){
                
         span.text(events[newI]);
         $(".bg").css("background-image", "url('" + images[newI] + "')");
-    }, 125);
+    }, 120);
     
     function randomI(oldI) {
         var randI = Math.floor(Math.random() * events.length);
