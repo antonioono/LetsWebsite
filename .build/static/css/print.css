@@ -1,6 +1,6 @@
 /*
 Syntax error: Invalid US-ASCII character "\xC3"
-        on line 20 of /Users/Antonio/Dropbox/Fizz/Brand/Website/FizzWebsite/static/css/print.scss
+        on line 20 of /Users/Antonio/Dropbox/fizz/Brand/Website/FizzWebsite/static/css/print.scss
 
 15:     }
 16:     .menu {
@@ -15,7 +15,7 @@ Syntax error: Invalid US-ASCII character "\xC3"
 25:                     width: 12em;
 
 Backtrace:
-/Users/Antonio/Dropbox/Fizz/Brand/Website/FizzWebsite/static/css/print.scss:20
+/Users/Antonio/Dropbox/fizz/Brand/Website/FizzWebsite/static/css/print.scss:20
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:373:in `block in check_encoding!'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/util.rb:604:in `rescue in block in check_encoding'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/util.rb:601:in `block in check_encoding'
@@ -43,4 +43,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid US-ASCII character \"\xC3\"\A         on line 20 of /Users/Antonio/Dropbox/Fizz/Brand/Website/FizzWebsite/static/css/print.scss\A \A 15:     }\A 16:     .menu {\A 17:         section {\A 18:             page-break-after: always;\A 19:             &:before {\A 20:                 content: \"nîkúmøn\";\A 21:                 margin-left: 2em;\A 22:             }\A 23:             ul {\A 24:                 li {\A 25:                     width: 12em;"; }
+  content: "Syntax error: Invalid US-ASCII character \"\xC3\"\A         on line 20 of /Users/Antonio/Dropbox/fizz/Brand/Website/FizzWebsite/static/css/print.scss\A \A 15:     }\A 16:     .menu {\A 17:         section {\A 18:             page-break-after: always;\A 19:             &:before {\A 20:                 content: \"nîkúmøn\";\A 21:                 margin-left: 2em;\A 22:             }\A 23:             ul {\A 24:                 li {\A 25:                     width: 12em;"; }
