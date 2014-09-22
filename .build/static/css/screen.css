@@ -59,14 +59,27 @@ html {
   font-size: 12pt;
   line-height: 1.5em;
   color: white; }
+  html a {
+    color: white;
+    text-decoration: none; }
 
 body {
+  margin-left: 1.5625%;
   background-color: black;
   background-image: url("../images/bg.jpg");
   background-attachment: fixed; }
-
-body {
-  margin-left: 1.5625%; }
+  body .buttons ul {
+    margin-top: 2em; }
+    body .buttons ul li {
+      display: inline-block; }
+      body .buttons ul li a {
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        margin-right: 0.5em;
+        border: 1px solid #fff;
+        border-radius: 5px; }
   body > header {
     display: block; }
     body > header h1 {

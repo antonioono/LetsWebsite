@@ -12,6 +12,11 @@ $fontBoldItalic:    "FuturaStd-BoldOblique";
 html {
     @include typeBody;
     color:  white;
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 @mixin smallCaps {
