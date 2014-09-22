@@ -1,157 +1,61 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline; }
+/*
+Syntax error: File to import not found or unreadable: _device.scss.
+              Load paths:
+                /Users/Victor/Github/Antonio Ono/LetsWebsite/.build
+                /Users/Victor/Github/Antonio Ono/LetsWebsite/static/lib/compass
+                /Users/Victor/Github/Antonio Ono/LetsWebsite/.build/sass
+                /Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/blueprint/stylesheets
+                /Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 2 of /Users/Victor/Github/Antonio Ono/LetsWebsite/static/css/_layout/_layout.scss
+        from line 2 of /Users/Victor/Github/Antonio Ono/LetsWebsite/static/css/screen.scss
 
-html {
-  line-height: 1; }
+1: @import "./_globals/_globals.scss";
+2: @import "./_layout/_layout.scss";
 
-ol, ul {
-  list-style: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
-
-q, blockquote {
-  quotes: none; }
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
-
-a img {
-  border: none; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block; }
-
-html {
-  text-rendering: optimizeLegibility;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-html {
-  font-family: "Futura", serif;
-  font-size: 12pt;
-  line-height: 1.5em;
-  color: white; }
-  html figure h1 {
-    font-family: "Futura-MediumItalic"; }
-
-body > .main > header h1 {
-  text-transform: lowercase;
-  font-family: "Futura-MediumItalic";
-  line-height: 1.25em;
-  font-size: 4em;
-  margin-left: -134.5pt;
-  position: relative;
-  width: 134.5pt;
-  left: 50%; }
-  body > .main > header h1 span {
-    display: block; }
-
-body section.iphone {
-  background: black;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  cursor: default; }
-  @media screen and (min-width: 320pt) {
-    body section.iphone {
-      border-radius: 40pt;
-      margin-left: -135pt;
-      position: absolute;
-      border: 1pt white solid;
-      bottom: -25vh;
-      height: 584pt;
-      width: 269pt;
-      left: 50%; } }
-  body section.iphone .screen {
-    background-color: black;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    overflow: scroll; }
-    @media screen and (min-width: 320pt) {
-      body section.iphone .screen {
-        margin-left: -123pt;
-        margin-top: -217pt;
-        position: relative;
-        height: 434pt;
-        width: 245pt;
-        left: 50%;
-        top: 50%; } }
-    body section.iphone .screen .interface {
-      position: relative;
-      z-index: 2;
-      height: 100%;
-      width: 100%; }
-      body section.iphone .screen .interface::after {
-        background-image: url("../images/bgEvent.jpg");
-        background-size: cover;
-        min-height: 100%;
-        min-width: 100%;
-        position: fixed;
-        content: "";
-        opacity: 0.9;
-        z-index: -1;
-        top: 0;
-        left: 0; }
-      body section.iphone .screen .interface header h1 {
-        text-transform: lowercase;
-        font-family: "Futura-MediumItalic";
-        line-height: 1.25em;
-        font-size: 5em;
-        padding-top: .25em; }
-      body section.iphone .screen .interface header author {
-        font-size: .666em;
-        font-family: "FuturaStd-Bold";
-        letter-spacing: .25em;
-        text-transform: uppercase !important;
-        font-family: "FuturaStd-BoldOblique";
-        line-height: 4em; }
-      body section.iphone .screen .interface .guestlist {
-        text-transform: lowercase;
-        margin-left: 25%;
-        margin-top: 1em; }
-        body section.iphone .screen .interface .guestlist ul.no-reply {
-          opacity: 50%; }
-  @media screen and (min-width: 320pt) {
-    body section.iphone .homeButton {
-      border-radius: 53pt;
-      margin-left: -27pt;
-      position: absolute;
-      bottom: 10pt;
-      border: 1pt white solid;
-      height: 53pt;
-      width: 53pt;
-      left: 50%; } }
-
-html body {
-  background-color: black;
-  background-image: url("../images/bg.jpg");
-  background-attachment: fixed; }
+Backtrace:
+/Users/Victor/Github/Antonio Ono/LetsWebsite/static/css/_layout/_layout.scss:2
+/Users/Victor/Github/Antonio Ono/LetsWebsite/static/css/screen.scss:2
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:443:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:326:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:21:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/bin/scss:13:in `<top (required)>'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/bin/scss:23:in `load'
+/Applications/Cactus.app/Contents/Resources/Vendor/ruby/gems/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: _device.scss.\A               Load paths:\A                 /Users/Victor/Github/Antonio Ono/LetsWebsite/.build\A                 /Users/Victor/Github/Antonio Ono/LetsWebsite/static/lib/compass\A                 /Users/Victor/Github/Antonio Ono/LetsWebsite/.build/sass\A                 /Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/blueprint/stylesheets\A                 /Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 2 of /Users/Victor/Github/Antonio Ono/LetsWebsite/static/css/_layout/_layout.scss\A         from line 2 of /Users/Victor/Github/Antonio Ono/LetsWebsite/static/css/screen.scss\A \A 1: @import \"./_globals/_globals.scss\";\A 2: @import \"./_layout/_layout.scss\";"; }
