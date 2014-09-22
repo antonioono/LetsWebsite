@@ -1,2 +1,4 @@
 .deploy
 npm-debug.log
+.build/
+.build/static/js/intro.js
