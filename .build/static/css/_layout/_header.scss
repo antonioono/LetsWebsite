@@ -1,15 +1,15 @@
 body {
+    margin-left:    $gutter;
+    
     > header {
+        display: block;
+    
         h1 {
             text-transform: lowercase;
             font-family:    $fontItalic;
             line-height:    1.25em;
-            font-size:      4em;
-
-            margin-left:   -$iPhoneWidth / 2;
-            position:       relative;
-            width:          $iPhoneWidth/2;
-            left:           50%;
+            font-size:      8vw;
+            letter-spacing:-.03125em;
             
             span {
                 display: block;

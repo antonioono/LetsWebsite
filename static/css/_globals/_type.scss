@@ -12,23 +12,6 @@ $fontBoldItalic:    "FuturaStd-BoldOblique";
 html {
     @include typeBody;
     color:  white;
-
-    article {
-
-        header {
-
-            h1 {
-            }
-        }
-    }
-
-    figure {
-
-        h1 {
-            font-family:    $fontItalic;
-        }
-
-    }
 }
 
 @mixin smallCaps {
