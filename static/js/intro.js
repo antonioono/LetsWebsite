@@ -31,13 +31,16 @@ $(document).ready(function(){
         oldI = newI = 0;
 
     setInterval(function(){        
-        newI = randomI(oldI);
-        console.log(newI, oldI);
-        oldI = newI;
                
-        span.text(events[newI]);
-        $(".bg").css("background-image", "url('" + images[newI] + "')");
-    }, 120);
+        span.text(events[newRandomI()]);
+        $(".bg").css("background-image", "url('" + images[newRandomI()] + "')");
+    }, 250);
+    
+    function newRandomI() {
+        newI = randomI(oldI);
+        oldI = newI;
+        return newI;
+    }
     
     function randomI(oldI) {
         var randI = Math.floor(Math.random() * events.length);
