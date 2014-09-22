@@ -2,8 +2,18 @@ body {
 	margin-left:    $gutter;
 	
 	background-color: black;
-	background-size: cover;
-	background-attachment: fixed;
+	
+	.bg {
+		background-size: cover;
+    	background-attachment: fixed;
+    	height: 100%;
+    	width: 100%;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	opacity: .9;
+    	z-index: -1;
+	}
 
 	.buttons {
 		position: fixed;

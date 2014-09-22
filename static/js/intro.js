@@ -15,22 +15,12 @@ $(document).ready(function(){
         i       = 0;
 
     setInterval(function(){
-        var title = events[i];
-        incrementEvent(title);
-        i++;
-        
+        var title = events[i];        
         span.text(title);
-        $("body").css("background-image", "url('" + images[i] + "')");
-
+        $(".bg").css("background-image", "url('" + images[i] + "')");
         i++;
-        if (i >= events.length) {
-            i = 1;
+        if (i == events.length) {
+            i = 0;
         }
-        
-        console.log(i);
     }, 125);
-
-    function incrementEvent(title) {
-        $(span).text(title);
-    }
 }); 
