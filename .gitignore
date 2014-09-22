@@ -1,4 +1,11 @@
 .deploy
 npm-debug.log
-.build/
+.build/*
+.build/static/js/intro.js
+.build/static/css/_layout/_layout.scss
+
+.build/static/css/print.css
+
+.build/static/css/screen.css
+
 .build/static/js/intro.js
