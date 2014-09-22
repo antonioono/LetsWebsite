@@ -1,0 +1,42 @@
+body {
+	margin-left:    $gutter;
+	
+	background-color: black;
+	background-image: url('../images/bg.jpg');
+	background-attachment: fixed;
+
+	.buttons {
+		ul {
+			margin-top: 2em;
+			
+			li {
+				display: inline-block;
+				
+				a {
+					padding-top: 0.5em;
+					padding-right: 1.5em;
+					padding-bottom: 0.5em;
+					padding-left: 1.5em;
+					
+					margin-right: 0.5em;
+					
+					border: 1px solid #fff;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+
+	> header {
+		display: block;
+
+		h1 {
+			text-transform: lowercase;
+			font-family:    $fontItalic;
+			line-height:    1.25em;
+			font-size:      12vw;
+			letter-spacing:-.03125em;
+
+		}
+	}
+}
