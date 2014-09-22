@@ -62,7 +62,7 @@ html {
 
 body {
   background-color: black;
-  /*  background-image: url('../images/bg.jpg'); */
+  background-image: url("../images/bg.jpg");
   background-attachment: fixed; }
 
 body {
@@ -73,7 +73,7 @@ body {
       text-transform: lowercase;
       font-family: "Futura-MediumItalic";
       line-height: 1.25em;
-      font-size: 8vw;
+      font-size: 12vw;
       letter-spacing: -.03125em; }
       body > header h1 span {
         display: block; }
