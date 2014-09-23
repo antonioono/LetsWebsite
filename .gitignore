@@ -21,3 +21,5 @@ npm-debug.log
 .build/index.html
 
 .build/index.html
+
+.build/error.html
