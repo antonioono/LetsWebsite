@@ -30,11 +30,11 @@ $(document).ready(function(){
         span    = $("body > header h1 span"),
         oldEvent = {text : 0, image : 9},
         newEvent = {text : 0, image : 9};
-                $(".bg").css("background-image", "url('" + images[newRandom("image")] + "')");
-
+        
     setInterval(function(){        
         span.text(events[newRandom("text")]);
-    }, 250);
+        $(".bg").css("background-image", "url('" + images[newRandom("image")] + "')");
+    }, 500);
     
     function newRandom(kind) {
         newEvent[kind] = Math.floor(Math.random() * events.length);
