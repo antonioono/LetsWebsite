@@ -28,12 +28,12 @@ $(document).ready(function(){
                     "./static/images/bgImages/IMG_0478.jpg",
                     "./static/images/bgImages/IMG_0479.jpg"],
         span    = $("body > header h1 span"),
-        oldEvent = {text : 0, image : 0},
-        newEvent = {text : 0, image : 0};
+        oldEvent = {text : 0, image : 9},
+        newEvent = {text : 0, image : 9};
+                $(".bg").css("background-image", "url('" + images[newRandom("image")] + "')");
 
     setInterval(function(){        
         span.text(events[newRandom("text")]);
-        $(".bg").css("background-image", "url('" + images[newRandom("image")] + "')");
     }, 250);
     
     function newRandom(kind) {
