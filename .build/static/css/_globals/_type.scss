@@ -13,7 +13,7 @@ $fontBoldItalic:    "FuturaStd-BoldOblique";
     text-transform: lowercase;
     font-family:    $fontItalic;
     line-height:    1.25em;
-    font-size:      12vw;
+    font-size:      11vw;
     letter-spacing:-.046875em;
 	
     @media screen and (max-aspect-ratio: 3/4) {
@@ -21,7 +21,7 @@ $fontBoldItalic:    "FuturaStd-BoldOblique";
 	}
     
     @media screen and (max-aspect-ratio: 2/3) {
-        font-size:      18vw;
+        font-size:      17vw;
 	}
 
     @media screen and (min-aspect-ratio: 3/2) {
