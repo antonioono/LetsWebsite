@@ -28,30 +28,25 @@ $(document).ready(function(){
                     "./static/images/bgImages/IMG_0478.jpg",
                     "./static/images/bgImages/IMG_0479.jpg"],
         span    = $("body > header h1 span"),
-        oldI = newI = 0;
-
+        oldEvent = {text : 0, image : 9},
+        newEvent = {text : 0, image : 9};
+        
     setInterval(function(){        
-               
-        span.text(events[newRandomI()]);
-        $(".bg").css("background-image", "url('" + images[newRandomI()] + "')");
-    }, 250);
+        span.text(events[newRandom("text")]);
+        $(".bg").css("background-image", "url('" + images[newRandom("image")] + "')");
+    }, 500);
     
-    function newRandomI() {
-        newI = randomI(oldI);
-        oldI = newI;
-        return newI;
+    function newRandom(kind) {
+        newEvent[kind] = Math.floor(Math.random() * events.length);
+        compare(newEvent[kind], oldEvent[kind], kind);
+        oldEvent[kind] = newEvent[kind];
+        return newEvent[kind];
     }
     
-    function randomI(oldI) {
-        var randI = Math.floor(Math.random() * events.length);
-        compareI(newI, oldI);
-        return newI;
-    }
-    
-    function compareI(a, b) {
+    function compare(a, b, kind) {
         if (a == b) {
-            newI = Math.floor(Math.random() * events.length);
-            compareI(newI, oldI);
+            newEvent[kind] = Math.floor(Math.random() * events.length);
+            compare(newEvent[kind], oldEvent[kind], kind);
         } else {
             return;
         }

@@ -17,3 +17,9 @@ npm-debug.log
 .build/static/css/print.css
 
 .build/static/js/intro.js
+
+.build/index.html
+
+.build/index.html
+
+.build/error.html
