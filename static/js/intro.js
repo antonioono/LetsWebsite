@@ -19,8 +19,16 @@ $(document).ready(function(){
         
     setInterval(function(){        
         span.text(events[newRandom("text")]);
-//         $(".bg").css("background-image", "url('" + images[newRandom("image")] + "')");
+        $("body").css("background", "-webkit-linear-gradient("+gradient("top")+" 0%,"+gradient("bottom")+" 100%) fixed");
     }, 500);
+    
+    function gradient(side) {
+        if (side == "top") {
+            return "orange";
+        } else {
+            return "red";
+        }
+    }
     
     function newRandom(kind) {
         newEvent[kind] = Math.floor(Math.random() * events.length);
