@@ -1,7 +1,7 @@
-$fontRegular:       "Futura";
-$fontBold:          "FuturaStd-Bold";
-$fontItalic:        "Futura-MediumItalic";
-$fontBoldItalic:    "FuturaStd-BoldOblique";
+$fontRegular:   "Futura";
+$fontBold:      "FuturaStd-Bold";
+$fontItalic:    "Futura-MediumItalic";
+$fontBoldItalic:"FuturaStd-BoldOblique";
 
 @mixin typeBody {
     font-family:    $fontRegular, serif;
@@ -9,43 +9,36 @@ $fontBoldItalic:    "FuturaStd-BoldOblique";
     line-height:    1.5em;
 }
 
-@mixin headerType {
-    text-transform: lowercase;
-    font-family:    $fontItalic;
-    line-height:    1.25em;
-    font-size:      11vw;
-    letter-spacing:-.046875em;
-	
-    @media screen and (max-aspect-ratio: 3/4) {
-        font-size:      15vw;
-	}
-    
-    @media screen and (max-aspect-ratio: 2/3) {
-        font-size:      17vw;
-	}
-
-    @media screen and (min-aspect-ratio: 3/2) {
-        font-size:      9vw;
-	}
-    
-    @media screen and (min-aspect-ratio: 16/9) {
-        font-size:      6vw;
-	}
+@mixin smallCaps {
+    font-size: .6em;
+    font-family: $fontBold;
+    letter-spacing: .25em;
+    margin-right: -.25em;
+    text-transform: uppercase !important;
 }
 
-html {
+body {
     @include typeBody;
     color:  white;
     
-    a {
-        color: white;
-        text-decoration: none;
+    em {
+        font-family: $fontItalic;
     }
-}
-
-@mixin smallCaps {
-    font-size:      .666em;
-    font-family:    $fontBold;
-    letter-spacing: .25em;
-    text-transform: uppercase !important;
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    figure {
+        
+        h1 {
+            font-family: $fontItalic;
+        }
+        
+    }
+    
+    .small-caps {
+        @include smallCaps;
+    }
 }
