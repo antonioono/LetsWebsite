@@ -12,28 +12,14 @@ $(document).ready(function(){
                     "get artisinal toast",
                     "dance",
                     "check out tropical tuesday at Brillbox",
-                    "get belgian waffle"],
-        images  =  ["./static/images/bgImages/IMG_0459.jpg",
-                    "./static/images/bgImages/IMG_0460.jpg",
-                    "./static/images/bgImages/IMG_0461.jpg",
-                    "./static/images/bgImages/IMG_0462.jpg",
-                    "./static/images/bgImages/IMG_0463.jpg",
-                    "./static/images/bgImages/IMG_0464.jpg",
-                    "./static/images/bgImages/IMG_0465.jpg",
-                    "./static/images/bgImages/IMG_0466.jpg",
-                    "./static/images/bgImages/IMG_0467.jpg",
-                    "./static/images/bgImages/IMG_0468.jpg",
-                    "./static/images/bgImages/IMG_0469.jpg",
-                    "./static/images/bgImages/IMG_0476.jpg",
-                    "./static/images/bgImages/IMG_0478.jpg",
-                    "./static/images/bgImages/IMG_0479.jpg"],
+                    "get belgian waffle"]
         span    = $("body > header h1 span"),
         oldEvent = {text : 0, image : 0},
         newEvent = {text : 0, image : 0};
         
     setInterval(function(){        
         span.text(events[newRandom("text")]);
-        $(".bg").css("background-image", "url('" + images[newRandom("image")] + "')");
+//         $(".bg").css("background-image", "url('" + images[newRandom("image")] + "')");
     }, 500);
     
     function newRandom(kind) {

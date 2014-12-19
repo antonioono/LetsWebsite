@@ -1,0 +1,44 @@
+$fontRegular:   "Futura";
+$fontBold:      "FuturaStd-Bold";
+$fontItalic:    "Futura-MediumItalic";
+$fontBoldItalic:"FuturaStd-BoldOblique";
+
+@mixin typeBody {
+    font-family:    $fontRegular, serif;
+    font-size:      12pt;
+    line-height:    1.5em;
+}
+
+@mixin smallCaps {
+    font-size: .6em;
+    font-family: $fontBold;
+    letter-spacing: .25em;
+    margin-right: -.25em;
+    text-transform: uppercase !important;
+}
+
+body {
+    @include typeBody;
+    color:  white;
+    
+    em {
+        font-family: $fontItalic;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    figure {
+        
+        h1 {
+            font-family: $fontItalic;
+        }
+        
+    }
+    
+    .small-caps {
+        @include smallCaps;
+    }
+}
