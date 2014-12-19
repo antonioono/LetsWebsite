@@ -16,13 +16,19 @@ $(document).ready(function(){
         span    = $("body > header h1 span"),
         oldEvent = 0,
         newEvent = 0,
-        bgTurn   = 0;        
+        bgTurn   = 1;        
 
+    changeBackground();
+    
     setInterval(function(){        
         span.text(events[newRandom()]);
     }, 125);
 
     setInterval(function(){
+        changeBackground();
+    }, 5000);
+    
+    function changeBackground() {
         $(".bg").css("opacity", bgTurn);
         var gradient = makeGradient();
         if (bgTurn == 1) {
@@ -32,7 +38,7 @@ $(document).ready(function(){
             $("body").css("background-image", "-webkit-linear-gradient("+gradient[0]+" 0%,"+gradient[1]+" 100%)");
             bgTurn = 1;
         }
-    }, 5000);
+    }
     
     function makeGradient() {
         var color,
