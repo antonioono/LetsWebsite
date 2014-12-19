@@ -22,34 +22,17 @@ $(document).ready(function(){
         span.text(events[newRandom()]);
     }, 125);
 
-    /*
-setInterval(function(){
-        $(".bg").css("opacity", bgTurn);
-        var gradient = makeGradient();
-        if (bgTurn == 0) {
-            $(".bg .inner").css("background-image", "-webkit-linear-gradient("+gradient[0]+" 0%,"+gradient[1]+" 100%)");
-            bgTurn = 1;
-        } else {
-            $("body").css("background-image", "-webkit-linear-gradient("+gradient[0]+" 0%,"+gradient[1]+" 100%)");
-            bgTurn = 0;
-        }
-    }, 1000);
-*/
-    
     setInterval(function(){
         $(".bg").css("opacity", bgTurn);
-    }, 62.5);
-    
-    setInterval(function(){
         var gradient = makeGradient();
-        if (bgTurn == 0) {
+        if (bgTurn == 1) {
             $(".bg .inner").css("background-image", "-webkit-linear-gradient("+gradient[0]+" 0%,"+gradient[1]+" 100%)");
-            bgTurn = 1;
+            bgTurn = 0;
         } else {
             $("body").css("background-image", "-webkit-linear-gradient("+gradient[0]+" 0%,"+gradient[1]+" 100%)");
-            bgTurn = 0;
+            bgTurn = 1;
         }
-    }, 125)
+    }, 5000);
     
     function makeGradient() {
         var color,
