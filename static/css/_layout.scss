@@ -28,7 +28,7 @@ body {
 
 		h1 {
 			@include bigTitle;
-
+            margin-top: $mainTitleTopMargin;
 		}
 	}
 }
