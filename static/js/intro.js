@@ -20,7 +20,7 @@ $(document).ready(function(){
     setInterval(function(){        
         span.text(events[newRandom("text")]);
         $("body").css("background", "-webkit-linear-gradient("+gradient("top")+" 0%,"+gradient("bottom")+" 100%) fixed");
-    }, 500);
+    }, 250);
     
     function gradient(side) {
         if (side == "top") {
