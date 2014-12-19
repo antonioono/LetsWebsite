@@ -28,40 +28,37 @@ $(document).ready(function(){
         changeBackground();
     }, 5000);
     
+    function newRandom() {
+        newEvent = deDupe(Math.floor(Math.random() * events.length), oldEvent);
+        oldEvent = newEvent;
+        return newEvent;
+    }
+
     function changeBackground() {
-        $(".bg").css("opacity", bgTurn);
+        $(".bg.back").css("opacity", bgTurn);
         var gradient = makeGradient();
         if (bgTurn == 1) {
-            $(".bg .inner").css("background-image", "-webkit-linear-gradient("+gradient[0]+" 0%,"+gradient[1]+" 100%)");
+            $(".bg.back .inner").css("background-image", "-webkit-linear-gradient("+gradient[0]+" 0%,"+gradient[1]+" 100%)");
             bgTurn = 0;
         } else {
-            $("body").css("background-image", "-webkit-linear-gradient("+gradient[0]+" 0%,"+gradient[1]+" 100%)");
+            $(".bg.front .inner").css("background-image", "-webkit-linear-gradient("+gradient[0]+" 0%,"+gradient[1]+" 100%)");
             bgTurn = 1;
         }
     }
     
     function makeGradient() {
-        var color,
-            colorValues     = [0,0,0],
-            primaryRgb      = Math.floor(Math.random()*3),
-            secondaryRgb    = deDupe(Math.floor(Math.random()*3), primaryRgb);
-            
-        colorValues[primaryRgb]   = 255;
-        colorValues[secondaryRgb] = Math.floor(Math.random()*255);
-        color = "rgb("+colorValues[0]+","+colorValues[1]+","+colorValues[2]+")";
-        var secondColorValues = colorValues;
-//         secondColorValues[secondaryRgb] = Math.max((colorValues[secondaryRgb] - 100), 0);
-//         secondColorValues[secondaryRgb] = Math.floor(Math.random()*255);
+        var firstColor, secondColor, secondColorValues, firstColorValues, primaryRgb, secondaryRgb;
+        firstColorValues                = [0,0,0];
+        primaryRgb                      = Math.floor(Math.random()*3);
+        secondaryRgb                    = deDupe(Math.floor(Math.random()*3), primaryRgb);
+        firstColorValues[primaryRgb]    = 255;
+        firstColorValues[secondaryRgb]  = Math.floor(Math.random()*255);
+        firstColor                      = "rgb("+firstColorValues[0]+","+firstColorValues[1]+","+firstColorValues[2]+")";
+        secondColorValues               = firstColorValues;
         secondColorValues[secondaryRgb] = 255;
-        secondColorValues[primaryRgb] = Math.floor(Math.random()*(255 - 128) + 128);
-        var secondColor = "rgb("+secondColorValues[0]+","+secondColorValues[1]+","+secondColorValues[2]+")";
-        return [color, secondColor];
-    }
-    
-    function newRandom() {
-        newEvent = deDupe(Math.floor(Math.random() * events.length), oldEvent);
-        oldEvent = newEvent;
-        return newEvent;
+        secondColorValues[primaryRgb]   = Math.floor(Math.random()*(255 - 128) + 128);
+        secondColor                     = "rgb("+secondColorValues[0]+","+secondColorValues[1]+","+secondColorValues[2]+")";
+        return [firstColor, secondColor];
     }
     
     function deDupe(a, b) {
