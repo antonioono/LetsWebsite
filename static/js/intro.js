@@ -28,8 +28,8 @@ $(document).ready(function(){
                     "./static/images/bgImages/IMG_0478.jpg",
                     "./static/images/bgImages/IMG_0479.jpg"],
         span    = $("body > header h1 span"),
-        oldEvent = {text : 0, image : 9},
-        newEvent = {text : 0, image : 9};
+        oldEvent = {text : 0, image : 0},
+        newEvent = {text : 0, image : 0};
         
     setInterval(function(){        
         span.text(events[newRandom("text")]);

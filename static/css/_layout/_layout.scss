@@ -1,6 +1,5 @@
 body {
 	margin-left:    $gutter;
-	
 	background-color: black;
 	
 	.bg {
@@ -13,6 +12,7 @@ body {
     	left: 0;
     	opacity: .8;
     	z-index: -1;
+/*     	@include transition(background-image .25s linear); */
 	}
 
 	.buttons {
