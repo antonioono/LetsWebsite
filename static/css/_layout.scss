@@ -1,13 +1,14 @@
 $opacity: .5;
 
 body {
-	margin-left: $fixedGutter;
 	background-attachment: fixed;
 	background-image: -webkit-linear-gradient(red 0%, orange 100%);
+	height: 100vh;
+	width: 100vw;
 	
 	.bg {
-    	height: 100%;
-    	width: 100%;
+    	height: 100vh;
+    	width: 100vw;
     	top: 0;
     	left: 0;
     	position: fixed;
@@ -16,8 +17,8 @@ body {
 
     	.inner {
         	position: absolute;
-        	height: 100vh;
-        	width: 100vw;
+        	height: 100%;
+        	width: 100%;
         	top: 0;
         	left: 0;
     	}
@@ -26,6 +27,7 @@ body {
 	.buttons {
 		position: fixed;
 		bottom: $baseline/2;
+		padding-left: $fixedGutter;
 	
 		ul {
 			margin-top: 2vw;
@@ -47,10 +49,12 @@ body {
 
 	> header {
 		display: block;
+    	padding-left: $fixedGutter;
+    	position: fixed;
 
 		h1 {
 			@include bigTitle;
-            margin-top: $mainTitleTopMargin;
+            padding-top: $mainTitleTopMargin;
             
             span {
                 opacity: $opacity;
